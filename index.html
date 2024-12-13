@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+
+        <div class="navbar1">
+            
+            <div class="tittle">
+             <h1 id="heading">TODO LIST</h1> 
+            </div>
+        </div>
+        
+        <div class="navbar2">
+
+            <div class="nav-srch"">
+                <div class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                
+                <div class="nav-bar">
+                <input class="search-bar" placeholder="Search Note...">
+                </div>
+            </div>
+
+            <div class="nav-all">
+                <select class="all-select" name="all" id="all">
+                    <option value="all">ALL</option>
+                </select>
+            </div>
+
+            <div class="mode-icon">
+                <i class="fa-solid fa-circle-half-stroke icon-2"></i>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+
+        <div class="hero-section">
+            <div class="hero-ops">
+                <div class="hero-items">
+                        <input type="checkbox" value="Read recommended book again" name="items" id="check-box1" class="checkboxes">
+                        <label for="check-box1" id="text1" class="texts">Read recommended book again</label>
+                        <hr>
+                        <input type="checkbox" value="vacation Planning" name="items" id="check-box2" class="checkboxes">
+                        <label for="check-box2" id="text2" class="texts">vacation Planning</label>
+                        <hr>
+                        <input type="checkbox" value="Cook dinner" name="items" id="check-box3" class="checkboxes">
+                        <label for="check-box3" id="text3" class="texts">Cook dinner</label>
+                        <hr>
+                        <input type="checkbox" value="Sign up for training" name="items" id="check-box4" class="checkboxes">
+                        <label for="check-box4" id="text4" class="texts">Sign up for training</label>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="source.js"></script>
+</body>
+</html>
