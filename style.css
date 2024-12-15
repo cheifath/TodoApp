@@ -131,9 +131,6 @@ body {
 
 .hero-items {
     margin-top: 50px;
-    /* display: flex;
-    align-items: center;
-    flex-wrap: wrap; */
     height: 500px;
     width: 310px;  
     font-size: 20px;
@@ -151,3 +148,38 @@ body {
     margin-top: 30px;
     
 }
+
+ul li {
+    list-style: none;
+    position: relative;
+    margin-bottom: 15px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url(images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 8px;
+    left: 16px;
+}
+
+ul li.checked {
+    color: grey;
+    text-decoration: line-through;
+}
+
+
+ul li.checked::before {
+    color: grey;
+    background-image: url(images/checked.png);
+}
+
+

@@ -30,16 +30,14 @@ icon.addEventListener('click',()=>{
     
 })
 
-const label=document.querySelectorAll("label");
-console.log(label);
-
-checkBoxes.forEach(checkbox => {
-    checkbox.addEventListener('change', ()=> { 
-        const label = document.querySelector(`label[for="${checkbox.id}"]`);
-        if (checkbox.checked) {
-            label.style.textDecoration = 'line-through';
-        } else {
-            label.style.textDecoration='none'; 
-        }
-    });
-});
+// //line-through
+// checkBoxes.forEach(checkbox => {
+//     checkbox.addEventListener('change', ()=> { 
+//         const label = document.querySelector(`label[for="${checkbox.id}"]`);
+//         if (checkbox.checked) {
+//             label.style.textDecoration = 'line-through';
+//         } else {
+//             label.style.textDecoration='none'; 
+//         }
+//     });
+// });
