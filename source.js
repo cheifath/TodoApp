@@ -43,7 +43,7 @@ function addTask() {
         item.appendChild(li); //adding the new element to a particular location
 
         let span = document.createElement("span");
-        span.innerHTML= "&#10006";
+        span.innerHTML= "&#10134";// &#10006
         li.appendChild(span);
     }
     saveTask();
@@ -76,7 +76,7 @@ item.addEventListener("click", function(e) { //adding event listener to the list
         saveTask();
         //saving the changes made
     } else if(e.target.tagName==="SPAN"){
-        e.target.classList.remove();
+        e.target.parentElement.remove();
     }
 
 })
